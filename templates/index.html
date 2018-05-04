@@ -1,9 +1,21 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body bgcolor="pink">
+        <div>
+            <p>User: {{ user }}</p>
+            <h2>{{link | safe}}</h2>
+        </div>
+
+        <div>
+            <p>insertar parrafo 1</p>
+            <h2><a href="">{{ link_2 }}</a></h2>
+        </div>
+
+        <div>
+            <p>insertar parrafo 2</p>
+            <h2><a href="">{{ link_3 }}</a></h2>
+          </div>
+    </body>
+</html>
